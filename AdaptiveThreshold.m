@@ -20,7 +20,7 @@ imgIn = double(imgIn);
 % Initialize a w x h matrix for integral image
 I = zeros(w,h);
 
-% Calculation of integral image 
+% First scan: Calculation of integral image 
 for i = 1:w
     sum = 0;
     for j = 1:h
@@ -33,7 +33,7 @@ for i = 1:w
     end
 end
 
-% 
+% Second scan: sliding window for every pixel of input image
 for i = 1:w
     for j = 1:h
         x1 = round(i-s/2); % add 'round' in case that s is odd
