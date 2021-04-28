@@ -1,0 +1,1 @@
+# Adaptive_Binarize_Integral_Method
